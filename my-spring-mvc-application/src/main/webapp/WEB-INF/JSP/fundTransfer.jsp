@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="transfer.mm">
+<form action="transfer">
 	<label>Enter Sender's Account Number</label>
 	<input type= "number" name="senderAccountNumber">
 	<br>

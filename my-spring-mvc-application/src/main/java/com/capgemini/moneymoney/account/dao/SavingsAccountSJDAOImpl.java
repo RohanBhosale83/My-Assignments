@@ -1,9 +1,11 @@
 package com.capgemini.moneymoney.account.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.stereotype.Repository;
 
 import com.capgemini.moneymoney.account.SavingsAccount;
@@ -66,8 +68,22 @@ public class SavingsAccountSJDAOImpl implements SavingsAccountDAO {
 	}
 
 	public List<SavingsAccount> sortAllSavingsAccount(int choice) {
-		// TODO Auto-generated method stub
-		return null;
+		List<SavingsAccount> savingsAccounts = new ArrayList<>();
+		switch (choice) {
+		case 1:
+			template.queryForObject("SELECT * FROM account ORDER BY account_id", new Object[] {savingsAccounts}, new AccountMapper());
+			break;
+
+		case 2:
+			template.queryForObject("SELECT * FROM account ORDER BY account_hn", new Object[] {savingsAccounts}, new AccountMapper());
+			break;
+			
+		case 3:
+			template.queryForObject("SELECT * FROM account ORDER BY account_bal DESC", new Object[] {savingsAccounts}, new AccountMapper());
+			break;
+		}
+		 
+		return savingsAccounts;
 	}
 
 	public SavingsAccount updateAccount(SavingsAccount savingsAccount)

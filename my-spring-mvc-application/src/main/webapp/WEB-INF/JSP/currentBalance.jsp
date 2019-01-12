@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="getCurrentBalance.mm">	
+	<form action="getCurrentBalance">	
 	<label>Enter Account Number</label>
 	<input type= "number" name="accountNumber">
 	<br>

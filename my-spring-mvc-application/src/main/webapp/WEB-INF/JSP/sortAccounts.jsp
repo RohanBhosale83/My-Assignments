@@ -5,13 +5,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="withdrawAmount">
-						<label>Enter Account Number</label>
-						<input type= "number" name="accountNumber">
-						<br>
-						<label>Enter Amount to Withdraw</label>
-						<input type= "number" name="amountToWithdraw">
-						<br>
+	<form action="sortAll">
+						<label>Sort Accounts By</label>
+						<label>1.Account Number</label>
+						<label>2.Account Holder Name</label>
+						<label>3.Account Balance</label>
+						<input type= "choice" name="Choice">
 						<input type="submit" value="Submit">
 						<input type="Reset" value="Clear">		
 		</form>

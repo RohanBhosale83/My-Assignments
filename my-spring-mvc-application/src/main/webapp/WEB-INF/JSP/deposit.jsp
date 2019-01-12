@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="depositAmount.mm">
+	<form action="depositAmount">
 						<label>Enter Account Number</label>
 						<input type= "number" name="accountNumber">
 						<br>
