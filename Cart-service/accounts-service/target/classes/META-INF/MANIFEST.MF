@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: admin
+Build-Jdk: 10.0.2
+Implementation-Title: accounts-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.eshoppingzone.app
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/cart-service
+Created-By: Maven Integration for Eclipse
+
