@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: cart-service
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: rohabhos
+Implementation-Vendor-Id: com.redhat.coolstore
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/cart
+Created-By: Maven Integration for Eclipse
+
